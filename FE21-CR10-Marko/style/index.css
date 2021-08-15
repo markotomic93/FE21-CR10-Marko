@@ -1,0 +1,77 @@
+
+body {
+	background-image: url("../image/body.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+tr {
+    text-align: center;
+}
+
+  td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+
+  }
+
+  td {
+	  font-family: "Segoe UI, sans-serif";
+  }
+
+  img:hover {
+	box-shadow: 0 0 2px 1px black;
+  }
+  img {
+	  width: 150px;
+  }
+
+  a:link{
+	  text-decoration: none;
+	  background-color: transparent;
+  }
+  a:hover {
+	  text-decoration: underline;
+  }
+ .bgimg{
+	 background: url(../image/hero.jpg) no-repeat center ;
+	 background-size: cover;
+	 height: 80vh;
+	 position: relative;
+  	text-align: center;
+  	color: white;
+	
+ }
+ .bgimg h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 5px 5px  black ;
+	font-size: 5vh;
+ }
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	 thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	 
+	tr { border: 1px solid #ccc; }
+
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+}
